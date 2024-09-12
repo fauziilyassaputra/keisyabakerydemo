@@ -20,6 +20,8 @@
   margin-top: 5rem;
   align-content: center;
   margin-top: 7rem;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tentangkami .about-isi .about-isigambar {
@@ -33,6 +35,9 @@
   margin: 0 1rem;
   margin-bottom: 2rem;
   border: 0.5rem solid var(--paling);
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .tentangkami .about-isi p {
@@ -96,6 +101,9 @@
     letter-spacing: 0.2rem;
     flex: 2;
     color: #ffffff;
+  }
+  .tentangkami .about-isi .about-isigambar img {
+    height: 30rem;
   }
 }
 
