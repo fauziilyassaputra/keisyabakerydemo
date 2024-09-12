@@ -1,0 +1,1402 @@
+:root {
+  --utama: rgb(167, 146, 119);
+  --sub: rgb(209, 187, 158);
+  --besar: rgb(234, 216, 192);
+  --paling: rgb(255, 242, 225);
+}
+
+* {
+  font-family: Georgia, tahoma, Times, serif;
+  /* font-family: "Montserrat", Arial, Helvetica, sans-serif; */
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  /* min-height: 5000px; */
+  background-color: var(--utama);
+}
+
+header {
+  display: flex;
+  z-index: 9999;
+  width: 100%;
+  height: 6rem;
+  background-color: var(--besar);
+  align-items: center;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+  position: fixed;
+  transform: translateY(-10rem);
+  animation: slideranima 1s linear forwards;
+}
+
+header nav {
+  width: 80%;
+  gap: 1rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .navbarbox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header nav .navbarbox a {
+  padding: 0 1.5rem;
+  font-size: 1.3rem;
+  text-shadow: 0px 1px 1px black;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+header nav .navbarbox a:hover {
+  color: #fff;
+  /* text-shadow: 0 0 10px var(--paling), 0 0 20px var(--paling), 0 0 40px var(--paling); */
+  /* text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff; */
+  text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+}
+
+#burgermenu {
+  display: none;
+}
+
+html {
+  font-size: 90%;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url(img/backgroundhero1.jpg);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+}
+
+.hero .content {
+  padding: 1.4rem 6%;
+}
+
+.hero .content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  /* background: linear-gradient(
+    rgb(167, 146, 119),
+    rgb(209, 187, 158),
+    rgb(234, 216, 192)
+  ); */
+  background: linear-gradient(
+    rgb(102, 90, 72),
+    rgb(167, 146, 119),
+    rgb(209, 187, 158)
+  );
+  color: transparent;
+  background-clip: text;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.hero .content h1 span {
+  font-size: 5rem;
+  text-transform: uppercase;
+  background: linear-gradient(
+    rgb(167, 146, 119),
+    rgb(209, 187, 158),
+    rgb(234, 216, 192)
+  );
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.hero .content p {
+  font-size: 2rem;
+  color: var(--paling);
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+.hero .content .cta {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  background-color: var(--sub);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.hero .content .cta:hover {
+  background-color: var(--besar);
+  /* text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;; */
+}
+
+.menu-box {
+  padding: 7rem 3% 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.menu-box .menu-judul {
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: -1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  opacity: 0;
+}
+
+.menu-box .menu-judul h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px black;
+  color: var(--besar);
+}
+.menu-box .menu-judul p {
+  font-size: 2rem;
+  color: var(--paling);
+}
+
+.menu-box .menu-boxg {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+}
+
+.menu-box .menu-boxg .menu-list {
+  position: relative;
+  margin: 1rem 1rem;
+  width: 35rem;
+  border: 10px solid var(--besar);
+}
+
+.menu-box .menu-boxg .menu-list img {
+  /* width: 25rem; */
+  object-fit: cover;
+  height: 25rem;
+  background-size: cover;
+}
+
+.menu-box .menu-boxg .menu-list .menu-isi {
+  background-color: rgba(209, 187, 158, 0.9);
+  width: 100%;
+  margin-top: -25rem;
+  height: 25rem;
+  position: absolute;
+  opacity: 0;
+  transition: 3s;
+}
+
+.menu-box .menu-boxg .menu-list .menu-isi:hover {
+  animation: menuanima 0.3s linear forwards;
+}
+
+@keyframes menuanima {
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-box .menu-boxg .menu-list .menu-isi h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  height: 20%;
+  text-align: center;
+  text-transform: uppercase;
+  /* padding-left: 1rem; */
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.menu-box .menu-boxg .menu-list .menu-isi p {
+  font-size: 1.7rem;
+  padding-left: 1rem;
+  line-height: 3.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px dotted black;
+}
+
+.menu-box .menu-boxg .menu-list .menu-isi h2 {
+  font-size: 3rem;
+  padding-left: 1rem;
+  letter-spacing: 0.5rem;
+  line-height: 4rem;
+  color: var(--paling);
+  text-shadow: 1px 1px 1px black;
+}
+
+.menu-box .menu-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.menu-box .menu-more .menu-button {
+  display: flex;
+  font-size: 3rem;
+  background-color: var(--besar);
+  border-radius: 3rem;
+  width: 15rem;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  border: 0.5rem solid var(--sub);
+}
+
+.menu-box .menu-more .menu-button:hover {
+  border: 0.5rem solid var(--besar);
+  background-color: var(--paling);
+}
+
+.packmenu-box {
+  width: 100%;
+  background-image: url(img/background1.jpg);
+}
+.packmenu-box .packmenu-judul {
+  height: 10rem;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: rgba(167, 146, 119, 0.8);
+}
+
+.packmenu-box .packmenu-judul h2 {
+  font-size: 4rem;
+  color: var(--besar);
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+}
+
+.packmenu-box .packmenu-judul p {
+  font-size: 2rem;
+  color: var(--paling);
+  opacity: 0;
+}
+
+/* animasi packmenu */
+
+.packmenu-box .packmenu-boxg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.packmenu-boxg .packmenu-boxlist,
+.packmenu-boxg .packmenu-boxlist2 {
+  margin: 8rem 8rem;
+  position: relative;
+  width: 16rem;
+  height: 20rem;
+  transform-style: preserve-3d;
+  transform: perspective(100rem) rotateY(15deg);
+  transition: 1s;
+}
+
+.packmenu-boxg .packmenu-boxlist::before,
+.packmenu-boxg .packmenu-boxlist2::before {
+  content: "";
+  position: absolute;
+  width: 16rem;
+  height: 20rem;
+  background: #222522;
+  z-index: 1000;
+  transform: translateY(14rem) rotateX(90deg) scale(1.1);
+  filter: blur(8rem);
+}
+
+.packmenu-boxg .packmenu-boxlist .packmenu-boxisi,
+.packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20rem;
+  background: linear-gradient(180deg, var(--utama), var(--sub));
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 90deg)) translateZ(8rem);
+}
+
+.packmenu-boxg .packmenu-boxlist .packmenu-boxisi .imgbx,
+.packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi .imgbx {
+  position: relative;
+  width: 100%;
+  height: 14rem;
+}
+
+.packmenu-boxg .packmenu-boxlist .packmenu-boxisi img,
+.packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.packmenu-boxg .packmenu-boxlist .packmenu-boxisi h2,
+.packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi h2 {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 2px 1px 2px black;
+  font-weight: 400;
+  color: var(--besar);
+  transform-style: preserve-3d;
+}
+
+.packmenu-boxg .packmenu-boxlist .packmenu-boxisi h2 span,
+.packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi h2 span {
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--paling);
+  text-shadow: 1px 1px 1px black;
+}
+
+.packmenu-boxg .packmenu-button {
+  position: absolute;
+  bottom: 0.5rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.packmenu-boxg .packmenu-button button {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  border: 5px solid var(--sub);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--besar);
+  font-family: monospace;
+}
+
+.packmenu-boxg .packmenu-button button:hover {
+  background-color: var(--paling);
+  border: 5px solid var(--besar);
+}
+
+/* about us */
+
+.about-box {
+  min-height: 35rem;
+  padding: 1rem 9% 1rem;
+}
+
+.about-box .about-judul {
+  font-size: 3rem;
+  margin-top: 5rem;
+  opacity: 0;
+}
+
+.about-box .about-judul h1 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: var(--besar);
+  text-shadow: 1px 1px 1px black;
+}
+
+.about-box .about-isi {
+  display: flex;
+  margin-top: 5rem;
+  align-content: center;
+  margin-top: 7rem;
+}
+
+.about-box .about-isi img {
+  height: 17rem;
+  width: 17rem;
+  object-fit: cover;
+  flex: 1;
+  border: 0.5rem solid var(--paling);
+  flex: 1;
+  margin: 0 5rem;
+}
+
+.about-box .about-isi p {
+  font-size: 1.2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.2rem;
+  flex: 3;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.about-box .about-isi p a {
+  color: var(--sub);
+  font-weight: 800;
+  text-shadow: 2px 2px 2px black;
+}
+
+.about-box .about-isi p a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+}
+
+/* lokasi box */
+
+.lokasi-box {
+  width: 100%;
+  margin-top: 10rem;
+  background-color: var(--paling);
+}
+
+.lokasi-box .lokasi-judul {
+  padding-top: 5.5rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+}
+
+.lokasi-box .lokasi-judul h1 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: var(--sub);
+  text-shadow: 1px 2px 2px black;
+  font-weight: 700;
+}
+
+.lokasi-box .lokasi-isi {
+  display: flex;
+  padding: 1rem 7% 1rem;
+  min-height: 60vh;
+}
+
+.lokasi-box .lokasi-isi .lokasi-gambar {
+  justify-content: center;
+  padding: 1rem 1% 1rem;
+  border: none;
+  flex: 3;
+}
+.lokasi-box .lokasi-isi .lokasi-gambar iframe {
+  height: 100%;
+  width: 95%;
+  border: 10px solid var(--besar);
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja {
+  padding-top: 1rem;
+  flex: 2;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja h1 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: var(--sub);
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 1rem;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar img {
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  border: 4px solid var(--besar);
+  background-color: #fff;
+  margin: 1rem 0;
+}
+
+.lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+/* footer */
+.footer-box {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  border-top: 2px dotted var(--paling);
+  font-family: "Montserrat", Arial, Helvetica, serif;
+}
+
+.footer-box .footer-isi {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.footer-box .footer-isi h2 {
+  color: var(--paling);
+  text-shadow: 1px 1px 1px black;
+}
+.footer-box .footer-isi a {
+  color: var(--paling);
+  text-shadow: 1px 1px 1px black;
+  font-weight: 700;
+}
+.footer-box .footer-isi p {
+  font-weight: 100;
+}
+.footer-box .footer-isi .footer-link {
+  margin: 1.5rem 1rem;
+}
+
+.footer-box .footer-isi .footer-link a {
+  color: var(--paling);
+  margin: 0 2.5rem;
+}
+.footer-box .footer-isi .footer-link a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+}
+
+.footer-box .footer-isi .footer-sosmed {
+  margin-bottom: 0.5rem;
+}
+.footer-box .footer-isi .footer-sosmed p {
+  font-weight: 200;
+}
+
+.footer-box .footer-isi .footer-sosmed a {
+  margin: 0 1rem;
+  height: 5rem;
+  width: 3rem;
+}
+
+.footer-box .footer-isi .footer-sosmed a:hover {
+  color: #fff;
+}
+
+/* animation  */
+
+.hero .content h1,
+.hero .content h1 span,
+.hero .content p,
+.hero .content .cta {
+  transform: translateY(12rem);
+  filter: blur(50%);
+  opacity: 0;
+  animation: textanima 1s linear 1 forwards;
+}
+
+.hero .content h1 {
+  animation-delay: 1s;
+}
+.hero .content h1 span {
+  animation-delay: 1.2s;
+}
+.hero .content p {
+  animation-delay: 1.4s;
+}
+.hero .content .cta {
+  animation-delay: 1.6s;
+}
+
+.animageseratas {
+  transform: translateY(15rem);
+  filter: blur(50px);
+  animation: geseratasanima 1s linear forwards;
+}
+
+@keyframes geseratasanima {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes slideranima {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes textanima {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* tablet */
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 90%;
+  }
+
+  header nav {
+    gap: 0.5rem;
+  }
+
+  header nav .navbarbox a {
+    padding: 0 1.3rem;
+    font-size: 1.2rem;
+    text-shadow: none;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  header nav .navbarbox a:hover {
+    color: #fff;
+    /* text-shadow: 0 0 10px var(--paling), 0 0 20px var(--paling), 0 0 40px var(--paling); */
+    /* text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff; */
+    text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+  }
+  .hero .content {
+    padding: 1.4rem 4%;
+  }
+
+  .hero .content h1 {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    /* background: linear-gradient(
+      rgb(167, 146, 119),
+      rgb(209, 187, 158),
+      rgb(234, 216, 192)
+    ); */
+    background: linear-gradient(
+      rgb(102, 90, 72),
+      rgb(167, 146, 119),
+      rgb(209, 187, 158)
+    );
+    color: transparent;
+    background-clip: text;
+    text-align: left;
+  }
+
+  .hero .content h1 span {
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(
+      rgb(167, 146, 119),
+      rgb(209, 187, 158),
+      rgb(234, 216, 192)
+    );
+    color: transparent;
+    background-clip: text;
+    text-align: left;
+  }
+
+  .hero .content p {
+    font-size: 2.3rem;
+    color: var(--paling);
+    letter-spacing: 0.1rem;
+    margin-left: 1rem;
+    text-align: left;
+  }
+
+  .hero .content .cta {
+    display: inline-block;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background-color: var(--sub);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+  }
+
+  .hero .content .cta:hover {
+    background-color: var(--besar);
+    /* text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;; */
+  }
+
+  .menu-box .menu-judul p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--paling);
+  }
+  .menu-box .menu-boxg .menu-list {
+    position: relative;
+    margin: 1rem 1rem;
+    width: 30rem;
+    border: 10px solid var(--besar);
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi h3 {
+    font-size: 2.8rem;
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi p {
+    font-size: 1.5rem;
+  }
+
+  .menu-box .menu-boxg .menu-list .menu-isi h2 {
+    font-size: 2.8rem;
+  }
+
+  .packmenu-boxg .packmenu-boxlist,
+  .packmenu-boxg .packmenu-boxlist2 {
+    margin: 8rem 8rem;
+    position: relative;
+    width: 16rem;
+    height: 20rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem) rotateY(15deg);
+    transition: 1s;
+  }
+
+  .packmenu-boxg .packmenu-boxlist::before,
+  .packmenu-boxg .packmenu-boxlist2::before {
+    content: "";
+    position: absolute;
+    width: 16rem;
+    height: 20rem;
+    background: #222522;
+    z-index: 1000;
+    transform: translateY(14rem) rotateX(90deg) scale(1.1);
+    filter: blur(8rem);
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(180deg, var(--utama), var(--sub));
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(8rem);
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi .imgbx,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi .imgbx {
+    position: relative;
+    width: 100%;
+    height: 13rem;
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi h2,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    text-shadow: 2px 1px 2px black;
+    margin: 1.5rem 0;
+    font-weight: 100;
+    color: var(--besar);
+    transform-style: preserve-3d;
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi h2 span,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi h2 span {
+    font-size: 1rem;
+    font-weight: 100;
+    color: var(--paling);
+    text-shadow: 2px 1px 2px black;
+    display: none;
+  }
+  .packmenu-boxg .packmenu-boxlist,
+  .packmenu-boxg .packmenu-boxlist2 {
+    margin: 7rem 5rem;
+  }
+  .packmenu-boxg .packmenu-button {
+    position: absolute;
+    bottom: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .packmenu-boxg .packmenu-button button {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .lokasi-box .lokasi-isi {
+    display: flex;
+    padding: 1rem 7% 1rem;
+    min-height: 30vh;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: var(--sub);
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 1rem;
+  }
+  .lokasi-box .lokasi-isi .lokasi-belanja p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar img {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border: 4px solid var(--besar);
+    background-color: #fff;
+    margin: 1rem 0;
+  }
+  .lokasi-box .lokasi-isi .lokasi-gambar {
+    justify-content: center;
+    padding: 1rem 1% 1rem;
+    border: none;
+    flex: 1;
+  }
+  .footer-box .footer-isi .footer-link a {
+    color: var(--paling);
+    margin: 0 2.5rem;
+    font-size: 1.6rem;
+  }
+  .footer-box .footer-isi p {
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-box .footer-isi .footer-sosmed {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  html {
+    font-size: 90%;
+  }
+  #burgermenu {
+    display: inline-block;
+    color: var(--utama);
+  }
+
+  header nav {
+    width: 80%;
+    gap: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header {
+    height: 7rem;
+  }
+
+  .navbar .navbarbox {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(209, 187, 158, 0.95);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.25s;
+    display: inline;
+    z-index: 9999;
+  }
+
+  .navbar .navbarbox.active {
+    right: 0;
+  }
+
+  .navbar .navbarbox a {
+    display: block;
+    margin: 1.5rem;
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .navbar .navbarbox a::after {
+    transform-origin: 0 0;
+  }
+  .hero .content {
+    padding: 1rem 10%;
+  }
+  .hero .content h1 {
+    font-size: 6.5rem;
+    background: linear-gradient(
+      rgb(167, 146, 119),
+      rgb(209, 187, 158),
+      rgb(234, 216, 192)
+    );
+    color: transparent;
+    background-clip: text;
+  }
+  .hero .content h1 span {
+    font-size: 6.5rem;
+  }
+
+  .hero .content p {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .menu-box .menu-judul p {
+    padding-top: 1rem;
+    font-size: 2.2rem;
+    color: var(--paling);
+  }
+  .menu-box .menu-boxg .menu-list {
+    position: relative;
+    margin: 1rem 1rem;
+    width: 23rem;
+    border: 10px solid var(--besar);
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi h3 {
+    font-size: 2.5rem;
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .menu-box .menu-boxg .menu-list .menu-isi h2 {
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+  }
+  .menu-box .menu-judul {
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .about-box .about-judul {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .about-box .about-isi {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .about-box .about-isi img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    flex: 1;
+    border: 0.5rem solid var(--paling);
+    margin: 2rem auto;
+  }
+  .about-box .about-isi p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: 0;
+    flex: 0;
+    color: #ffffff;
+  }
+
+  .footer-box .footer-isi p {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-box .footer-isi .footer-link a {
+    color: var(--paling);
+    margin: 0 2rem;
+  }
+  .footer-box .footer-isi .footer-sosmed {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    line-height: 1rem;
+  }
+  .lokasi-box {
+    width: 100%;
+    margin-top: 0;
+    background-color: var(--paling);
+  }
+
+  .lokasi-box .lokasi-judul {
+    padding-top: 5.5rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .lokasi-box .lokasi-judul h1 {
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: var(--sub);
+    text-shadow: 1px 2px 2px black;
+    font-weight: 700;
+  }
+
+  .lokasi-box .lokasi-isi {
+    display: flex;
+    padding: 1rem 7% 1rem;
+    min-height: 60vh;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-gambar {
+    justify-content: center;
+    padding: 1rem 1% 1rem;
+    border: none;
+    flex: 2;
+  }
+  .lokasi-box .lokasi-isi .lokasi-gambar iframe {
+    height: 100%;
+    width: 95%;
+    border: 10px solid var(--besar);
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja {
+    padding-top: 1rem;
+    flex: 2;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: var(--sub);
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 1rem;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar img {
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border: 4px solid var(--besar);
+    background-color: #fff;
+    margin: 1rem 0;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+  .hero .content {
+    padding: 1rem 2.2%;
+  }
+  .hero .content h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    /* background: linear-gradient(
+      rgb(167, 146, 119),
+      rgb(209, 187, 158),
+      rgb(234, 216, 192)
+    ); */
+    background: linear-gradient(
+      rgb(102, 90, 72),
+      rgb(167, 146, 119),
+      rgb(209, 187, 158)
+    );
+    color: transparent;
+    background-clip: text;
+    text-align: left;
+    line-height: 7rem;
+  }
+
+  .hero .content h1 span {
+    font-size: 5.5rem;
+  }
+
+  .hero .content p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  header nav {
+    width: 80%;
+    gap: 1rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header nav a img {
+    height: 4rem;
+  }
+  .navbar .navbarbox.active {
+    right: -15%;
+  }
+
+  .menu-box {
+    padding: 5rem 3% 1.4rem;
+  }
+  .menu-box .menu-judul h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px black;
+    color: var(--besar);
+  }
+  .menu-box .menu-judul p {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--paling);
+  }
+  .menu-box .menu-judul {
+    width: 100%;
+    flex-wrap: wrap;
+    line-height: 4rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .menu-box .menu-boxg .menu-list {
+    position: relative;
+    margin: 1rem 1rem;
+    width: 30rem;
+    border: 10px solid var(--besar);
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi h3 {
+    font-size: 2.8rem;
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .menu-box .menu-boxg .menu-list .menu-isi h2 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+    padding-top: 0.5rem;
+  }
+
+  .packmenu-box .packmenu-judul h2 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+  .packmenu-box .packmenu-judul p {
+    font-size: 1.8rem;
+  }
+
+  .packmenu-boxg .packmenu-boxlist,
+  .packmenu-boxg .packmenu-boxlist2 {
+    margin: 8rem 3rem;
+    position: relative;
+    width: 12rem;
+    height: 16rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem) rotateY(15deg);
+    transition: 1s;
+  }
+
+  .packmenu-boxg .packmenu-boxlist::before,
+  .packmenu-boxg .packmenu-boxlist2::before {
+    content: "";
+    position: absolute;
+    width: 12rem;
+    height: 16rem;
+    background: #222522;
+    z-index: 1000;
+    transform: translateY(14rem) rotateX(90deg) scale(1.1);
+    filter: blur(8rem);
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 16rem;
+    background: linear-gradient(180deg, var(--utama), var(--sub));
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(6rem);
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi .imgbx,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi .imgbx {
+    position: relative;
+    width: 100%;
+    height: 10rem;
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi img,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .packmenu-boxg .packmenu-boxlist .packmenu-boxisi h2,
+  .packmenu-boxg .packmenu-boxlist2 .packmenu-boxisi h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 2px 1px 2px black;
+    font-weight: 400;
+    color: var(--besar);
+    transform-style: preserve-3d;
+  }
+
+  .about-box .about-judul {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .about-box .about-isi {
+    text-align: center;
+  }
+
+  .about-box .about-isi img {
+    height: 15rem;
+    width: 20rem;
+    object-fit: cover;
+    flex: 1;
+    border: 0.5rem solid var(--paling);
+    margin: 2rem auto;
+  }
+  .lokasi-box .lokasi-isi {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 7% 1rem;
+    min-height: 60vh;
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-gambar {
+    justify-content: center;
+    padding: 1rem 1% 1rem;
+    border: none;
+    flex: 2;
+  }
+  .lokasi-box .lokasi-isi .lokasi-gambar iframe {
+    height: 100%;
+    width: 95%;
+    border: 5px solid var(--besar);
+  }
+
+  .lokasi-box .lokasi-isi .lokasi-belanja {
+    padding-top: 1rem;
+    flex: 2;
+    text-align: center;
+  }
+  .footer-box .footer-isi .footer-link a {
+    color: var(--paling);
+    margin: 0 1rem;
+    font-size: 1.4rem;
+  }
+  .footer-box .footer-isi .footer-sosmed {
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    line-height: 3rem;
+  }
+  .footer-box .footer-isi p {
+    font-weight: 100;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer-box .footer-isi img {
+    height: 5rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 55%;
+  }
+  .about-box .about-isi p {
+    font-family: Arial, Helvetica, serif;
+  }
+  .footer-box .footer-isi .footer-link a {
+    color: var(--paling);
+    margin: 0 1.5rem;
+    font-size: 1.4rem;
+  }
+  .packmenu-boxg .packmenu-button button {
+    border: 3px solid var(--sub);
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .menu-box .menu-boxg .menu-list .menu-isi p {
+    font-size: 1.4rem;
+    line-height: 3.5rem;
+  }
+  .packmenu-box .packmenu-judul p {
+    font-size: 1.5rem;
+  }
+  .lokasi-box .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten p {
+    font-size: 1.3rem;
+  }
+  .footer-box .footer-isi .footer-link a {
+    margin: 0 1rem;
+  }
+  .footer-box .footer-isi img {
+    height: 5rem;
+  }
+  .footer-box .footer-isi h2 {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+  }
+  .packmenu-boxg .packmenu-button button {
+    border: 3px solid var(--sub);
+  }
+  .about-box .about-isi p {
+    font-family: Arial, Helvetica, serif;
+  }
+  .hero .content p {
+    font-size: 2.5rem;
+    margin-left: 0;
+    line-height: 4rem;
+  }
+  .hero .content {
+    padding: 1rem 4%;
+  }
+}

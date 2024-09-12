@@ -1,0 +1,195 @@
+.belanja {
+  width: 100%;
+  background-color: var(--paling);
+}
+
+.belanja .lokasi-judul {
+  padding-top: 5.5rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.belanja .lokasi-judul h1 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: var(--sub);
+  text-shadow: 3px 1px 3px black;
+  font-weight: 700;
+}
+
+.belanja .lokasi-isi {
+  margin-top: -2rem;
+  display: flex;
+  padding: 1rem 7% 1rem;
+  min-height: 60vh;
+  justify-content: center;
+}
+
+.belanja .lokasi-isi .lokasi-gambar {
+  justify-content: center;
+  padding: 1rem 1% 1rem;
+  border: none;
+}
+.belanja .lokasi-isi .lokasi-gambar iframe {
+  height: 100%;
+  width: 95%;
+  border: 10px solid var(--besar);
+}
+
+.belanja .lokasi-isi .lokasi-belanja {
+  padding-top: 1rem;
+}
+
+.belanja .lokasi-isi .lokasi-belanja h1 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: var(--sub);
+  text-shadow: 1px 1px 1px black;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+
+.belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar img {
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  border: 4px solid var(--besar);
+  background-color: #fff;
+  margin: 1rem 0;
+}
+
+.belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  font-size: 1.7rem;
+}
+
+@media (max-width: 1110px) {
+  html {
+    font-size: 90%;
+  }
+  .belanja .lokasi-judul h1 {
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color: var(--sub);
+    text-shadow: 3px 1px 3px black;
+    font-weight: 700;
+    padding-top: 3rem;
+    font-size: 7rem;
+  }
+
+  .belanja .lokasi-isi {
+    justify-content: center;
+    align-items: center;
+  }
+  .belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isigambar img {
+    height: 9rem;
+    width: 9rem;
+    object-fit: cover;
+    border: 4px solid var(--besar);
+    background-color: #fff;
+    margin: 1rem 0;
+  }
+
+  .belanja .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: var(--sub);
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 5rem;
+    text-align: center;
+  }
+  .belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 850px) {
+  .belanja .lokasi-judul h1 {
+    font-size: 5rem;
+  }
+  .belanja .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    color: var(--sub);
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+  .belanja .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    color: var(--sub);
+    text-shadow: 1px 1px 1px black;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .belanja .lokasi-judul h1 {
+    padding-top: 10rem;
+    font-size: 5rem;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 55%;
+  }
+  .belanja .lokasi-isi {
+    display: flex;
+    padding: 1rem 7% 1rem;
+    justify-content: center;
+  }
+  .belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .belanja .lokasi-judul h1 {
+    font-size: 4.5rem;
+  }
+  .belanja .lokasi-isi .lokasi-belanja .lokasi-isi2 .lokasi-isiconten {
+    font-size: 1.3rem;
+    line-height: 3rem;
+  }
+  .belanja .lokasi-isi .lokasi-belanja h1 {
+    font-size: 2rem;
+  }
+}

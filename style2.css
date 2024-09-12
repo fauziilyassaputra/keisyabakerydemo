@@ -1,0 +1,201 @@
+.regulermenu-img {
+  background-image: url(img/background.jpg);
+  min-height: 50vh;
+}
+
+.regulermenu-img .regulermenu-judul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.regulermenu-img .regulermenu-judul h1 {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  /* background: linear-gradient(
+    rgb(167, 146, 119),
+    rgb(231, 207, 176),
+    rgb(255, 236, 210)
+  ); */
+  background: linear-gradient(
+    rgb(199, 175, 143),
+    rgb(252, 233, 209),
+    rgb(253, 249, 243)
+  );
+  color: transparent;
+  background-clip: text;
+  text-align: center;
+  font-weight: 700;
+}
+
+.regulermenu-isi {
+  background-color: var(--besar);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regulermenu-isi p {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.menulist-box .menulist-pilihan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menulist-box .menulist-pilihan p {
+  font-size: 1.8rem;
+  padding: 2.5rem 1.5rem;
+  color: var(--besar);
+  font-weight: 600;
+  text-shadow: 1px 2px 2px black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menulist-box .menulist-pilihan p:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #ffa569, 0 0 20px #ffa569, 0 0 40px #ffa569;
+}
+
+.menulist-box .menulist-isi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.menulist-box .menulist-isi .menulist-isibox {
+  padding: 1rem 2.5rem;
+  transform: translateY(2rem);
+  transition: 1s;
+  animation: animaboxmenu 0.5s linear forwards;
+  filter: blur(50%);
+  opacity: 0;
+}
+
+@keyframes animaboxmenu {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.menulist-box .menulist-isi .menulist-isibox img {
+  border: 4px solid var(--paling);
+  object-fit: cover;
+  height: 12rem;
+}
+
+.menulist-box .menulist-isi .menulist-isibox .menulist-isiboxtext {
+  padding-top: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.menulist-box .menulist-isi .menulist-isibox .menulist-isiboxtext h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+.menulist-box .menulist-isi .menulist-isibox .menulist-isiboxtext p {
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 1110px) {
+  html {
+    font-size: 90%;
+  }
+  .regulermenu-img {
+    background-image: url(img/background.jpg);
+    min-height: 30vh;
+  }
+
+  .regulermenu-img .regulermenu-judul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    min-height: 30vh;
+  }
+  .regulermenu-isi {
+    background-color: var(--besar);
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .regulermenu-isi p {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 2rem;
+  }
+
+  .menulist-box .menulist-isi .menulist-isibox .menulist-isiboxtext h2 {
+    font-size: 1.5rem;
+  }
+  .menulist-box .menulist-isi .menulist-isibox .menulist-isiboxtext p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 70%;
+  }
+  .regulermenu-img .regulermenu-judul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    min-height: 25vh;
+    padding-top: 10rem;
+    font-size: 2.5rem;
+  }
+
+  .regulermenu-isi p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .menulist-box .menulist-pilihan p {
+    font-size: 1.5rem;
+    padding: 2.5rem 1rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+  .regulermenu-img .regulermenu-judul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    min-height: 25vh;
+    padding-top: 11rem;
+    font-size: 2.5rem;
+  }
+}

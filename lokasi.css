@@ -1,0 +1,62 @@
+.lokasi-box2 {
+  width: 100%;
+  background-color: var(--paling);
+}
+
+.lokasi-box2 .lokasi-judul {
+  padding-top: 5.5rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.lokasi-box2 .lokasi-judul h1 {
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: var(--sub);
+  text-shadow: 3px 1px 3px black;
+  font-weight: 700;
+}
+
+.lokasi-box2 .lokasi-judul p {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  font-weight: 700;
+  color: var(--besar);
+  text-shadow: 1px 2px 2px black;
+}
+
+.lokasi-box2 .lokasi-isi {
+  display: flex;
+  min-height: 60vh;
+  width: 100%;
+  justify-content: center;
+}
+
+.lokasi-box2 .lokasi-isi .lokasi-gambar {
+  padding: 1rem 1% 1rem;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+.lokasi-box2 .lokasi-isi .lokasi-gambar iframe {
+  height: 100%;
+  width: 95%;
+  border: 10px solid var(--besar);
+}
+
+@media (max-width: 850px) {
+  .lokasi-box2 .lokasi-judul {
+    padding-top: 8rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .lokasi-box2 .lokasi-isi .lokasi-gambar iframe {
+    height: 100%;
+    width: 95%;
+    border: 5px solid var(--besar);
+  }
+}
