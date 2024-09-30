@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="reset.css" />
     <title>keisya cake & bakery</title>
@@ -123,8 +124,10 @@
           </div>
         </div>
       </div>
-      <div class="menu-more">
-        <a href="menu.html" class="menu-button">more</a>
+      <div data-aos="zoom-out" data-aos-duration="1000">
+        <div class="menu-more">
+          <a href="menu.html" class="menu-button">more</a>
+        </div>
       </div>
     </section>
     <!-- menu section end -->
@@ -233,8 +236,9 @@
           sequi pariatur, inventore dolores.
         </p>
 
-        <img src="img/owner.jpg" alt="" />
-
+        <div data-aos="zoom-out" data-aos-duration="1000">
+          <img src="img/owner.jpg" alt="" />
+        </div>
         <p class="geseratas">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolorum
           ullam adipisci exercitationem quia facere amet repudiandae provident
@@ -269,14 +273,21 @@
             class="map"
           ></iframe>
         </div>
+
         <div class="lokasi-belanja geseratas">
           <h1 class="">kunjungi kami</h1>
           <p class="">lorong melati, desa mawar, kec.anggrek, surabaya.</p>
           <div class="lokasi-isi2">
             <div class="lokasi-isigambar">
-              <img src="img/gofood1.png" alt="" />
-              <img src="img/grab1.jpg" alt="" />
-              <img src="img/shopee.png" alt="" />
+              <div data-aos="zoom-out" data-aos-duration="1500">
+                <img src="img/gofood1.png" alt="" />
+              </div>
+              <div data-aos="zoom-out" data-aos-duration="1500">
+                <img src="img/grab1.jpg" alt="" />
+              </div>
+              <div data-aos="zoom-out" data-aos-duration="1500">
+                <img src="img/shopee.png" alt="" />
+              </div>
             </div>
             <div class="lokasi-isiconten">
               <p>
@@ -343,7 +354,10 @@
       </div>
     </section>
     <!-- footer end -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       feather.replace();
     </script>

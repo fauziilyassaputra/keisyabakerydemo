@@ -131,7 +131,7 @@
   .tentangkami .about-isi .about-isigambar img {
     margin: 0 1rem;
     margin-bottom: 2rem;
-    border: 0.5rem solid var(--paling);
+    border: 0.5rem solid var(--sub);
     height: 30rem;
   }
 }
@@ -157,7 +157,7 @@
   .tentangkami .about-isi .about-isigambar img {
     margin: 0 1rem;
     margin-bottom: 2rem;
-    border: 0.5rem solid var(--paling);
+    border: 0.5rem solid var(--sub);
     height: 20rem;
   }
 
@@ -198,7 +198,7 @@
   .kenangan .gambarkenangan img {
     height: 20rem;
     width: 20rem;
-    border: 5px solid var(--paling);
+    border: 5px solid var(--sub);
     margin: 1rem 1rem;
     object-fit: cover;
   }
