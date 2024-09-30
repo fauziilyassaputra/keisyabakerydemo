@@ -64,13 +64,14 @@
   flex-wrap: wrap;
   padding: 5rem 0;
   justify-content: center;
+  background-color: var(--paling);
 }
 
 .kenangan h1 {
   font-size: 3rem;
   letter-spacing: 1rem;
   padding-bottom: 2rem;
-  color: var(--paling);
+  color: var(--utama);
   font-weight: 400;
   font-family: Georgia, "Times New Roman", Times, serif;
 }

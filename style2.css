@@ -52,12 +52,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--paling);
 }
 
 .menulist-box .menulist-pilihan p {
   font-size: 1.8rem;
   padding: 2.5rem 1.5rem;
-  color: var(--besar);
+  color: var(--sub);
   font-weight: 600;
   text-shadow: 1px 2px 2px black;
   text-transform: uppercase;
@@ -73,7 +74,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 5rem;
+  background-color: var(--paling);
 }
 
 .menulist-box .menulist-isi .menulist-isibox {

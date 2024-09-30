@@ -400,7 +400,6 @@ html {
 
 .about-box {
   min-height: 35rem;
-  padding: 1rem 9% 1rem;
 }
 
 .about-box .about-judul {
@@ -421,6 +420,7 @@ html {
   margin-top: 5rem;
   align-content: center;
   margin-top: 7rem;
+  padding: 1rem 7% 1rem;
 }
 
 .about-box .about-isi img {
@@ -457,11 +457,12 @@ html {
 
 .lokasi-box {
   width: 100%;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   background-color: var(--paling);
 }
 
 .lokasi-box .lokasi-judul {
+  /* padding-top: 5.5rem; */
   font-size: 3rem;
   margin-bottom: 2rem;
   opacity: 0;
@@ -545,9 +546,7 @@ html {
 /* footer */
 .footer-box {
   height: 20rem;
-  display: flex;
-  justify-content: center;
-  border-top: 2px dotted var(--paling);
+  /* border-top: 2px dotted var(--paling); */
   font-family: "Montserrat", Arial, Helvetica, serif;
 }
 
