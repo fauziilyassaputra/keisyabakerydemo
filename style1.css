@@ -1,8 +1,8 @@
 :root {
-  --utama: rgb(167, 146, 119);
+  --utama: #a79277;
   --sub: rgb(209, 187, 158);
   --besar: rgb(234, 216, 192);
-  --paling: rgb(255, 242, 225);
+  --paling: #fff2e1;
 }
 
 * {
@@ -462,7 +462,6 @@ html {
 }
 
 .lokasi-box .lokasi-judul {
-  padding-top: 5.5rem;
   font-size: 3rem;
   margin-bottom: 2rem;
   opacity: 0;
