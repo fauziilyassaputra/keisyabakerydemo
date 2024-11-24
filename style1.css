@@ -1,3 +1,4 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500;700&display=swap"); */
 :root {
   --utama: #a79277;
   --sub: rgb(209, 187, 158);
@@ -6,7 +7,8 @@
 }
 
 * {
-  font-family: Georgia, tahoma, Times, serif;
+  font-family: "McLaren", sans-serif;
+
   /* font-family: "Montserrat", Arial, Helvetica, sans-serif; */
   text-decoration: none;
   color: black;
@@ -52,6 +54,7 @@ header nav .navbarbox a {
   text-shadow: 0px 1px 1px black;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
+  font-family: "poppins", sans-serif;
 }
 header nav .navbarbox a:hover {
   color: #fff;
@@ -100,6 +103,7 @@ html {
     rgb(209, 187, 158),
     rgb(234, 216, 192)
   ); */
+  font-family: "kalam", serif;
   background: linear-gradient(
     rgb(102, 90, 72),
     rgb(167, 146, 119),
@@ -112,6 +116,7 @@ html {
 }
 
 .hero .content h1 span {
+  font-family: "kalam", serif;
   font-size: 5rem;
   text-transform: uppercase;
   background: linear-gradient(
@@ -129,6 +134,7 @@ html {
   color: var(--paling);
   letter-spacing: 0.1rem;
   line-height: 3rem;
+  font-family: "McLaren", sans-serif;
 }
 
 .hero .content .cta {
@@ -158,10 +164,11 @@ html {
   margin-top: -1rem;
   margin-bottom: 5rem;
   text-align: center;
-  opacity: 0;
 }
 
 .menu-box .menu-judul h2 {
+  font-family: "Kalam", serif;
+
   font-size: 5rem;
   text-transform: uppercase;
   text-shadow: 1px 2px 2px black;
@@ -215,6 +222,7 @@ html {
 }
 
 .menu-box .menu-boxg .menu-list .menu-isi h3 {
+  font-family: "Kalam", serif;
   font-size: 3rem;
   font-weight: 400;
   height: 20%;
@@ -279,13 +287,11 @@ html {
   font-size: 4rem;
   color: var(--besar);
   text-shadow: 1px 1px 1px black;
-  opacity: 0;
 }
 
 .packmenu-box .packmenu-judul p {
   font-size: 2rem;
   color: var(--paling);
-  opacity: 0;
 }
 
 /* animasi packmenu */
@@ -405,7 +411,6 @@ html {
 .about-box .about-judul {
   font-size: 3rem;
   margin-top: 5rem;
-  opacity: 0;
 }
 
 .about-box .about-judul h1 {
@@ -439,7 +444,6 @@ html {
   letter-spacing: 0.2rem;
   flex: 3;
   color: #ffffff;
-  opacity: 0;
 }
 
 .about-box .about-isi p a {
@@ -474,6 +478,7 @@ html {
   color: var(--sub);
   text-shadow: 1px 2px 2px black;
   font-weight: 700;
+  font-family: "Kalam", serif;
 }
 
 .lokasi-box .lokasi-isi {
@@ -600,7 +605,7 @@ html {
 
 /* animation  */
 
-.hero .content h1,
+/* .hero .content h1,
 .hero .content h1 span,
 .hero .content p,
 .hero .content .cta {
@@ -608,7 +613,7 @@ html {
   filter: blur(50%);
   opacity: 0;
   animation: textanima 1s linear 1 forwards;
-}
+} */
 
 .hero .content h1 {
   animation-delay: 1s;
@@ -643,13 +648,13 @@ html {
   }
 }
 
-@keyframes textanima {
+/* @keyframes textanima {
   to {
     transform: translateY(0);
     filter: blur(0);
     opacity: 1;
   }
-}
+} */
 
 /* tablet */
 

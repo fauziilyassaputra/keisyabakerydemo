@@ -12,10 +12,11 @@
   min-height: 50vh;
 }
 
-.regulermenu-img .regulermenu-judul h1 {
+.regulermenu-img .regulermenu-judul h1 span {
   font-size: 3rem;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  font-family: "Kalam", serif;
   /* background: linear-gradient(
     rgb(167, 146, 119),
     rgb(231, 207, 176),
@@ -45,7 +46,7 @@
   font-size: 1rem;
   color: white;
   font-weight: 600;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 .menulist-box .menulist-pilihan {
@@ -63,6 +64,7 @@
   text-shadow: 1px 2px 2px black;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "poppins", sans-serif;
 }
 
 .menulist-box .menulist-pilihan p:hover {
@@ -95,7 +97,7 @@
 }
 
 .menulist-box .menulist-isi .menulist-isibox img {
-  border: 4px solid var(--sub);
+  border: 4px solid var(--paling);
   object-fit: cover;
   height: 12rem;
 }

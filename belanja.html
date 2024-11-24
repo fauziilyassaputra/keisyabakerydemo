@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="belanja.css" />
@@ -16,14 +36,30 @@
     <!-- navbar start -->
     <header>
       <nav class="navbar">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <a href="#"
+          ><img
+            src="img/logo.png"
+            alt="logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="450"
+        /></a>
 
         <div class="navbarbox">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="500"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="550"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="600"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="650"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="700"
+            >belanja</a
+          >
         </div>
         <div class="navbar-extra">
           <a id="burgermenu"><i data-feather="menu"></i></a>
@@ -34,28 +70,45 @@
 
     <section class="belanja" id="lokasi">
       <div class="lokasi-judul">
-        <h1>belanja online</h1>
+        <h1 data-aos="zoom-in" data-aos-delay="300">belanja online</h1>
       </div>
       <div class="lokasi-isi">
         <div class="lokasi-belanja">
-          <h1>belanja berbagai menu kami di marketplace terbaik anda</h1>
+          <h1 data-aos="zoom-in" data-aos-delay="350">
+            belanja berbagai menu kami di marketplace terbaik anda
+          </h1>
           <!-- <p>lorong melati, desa mawar, kec.anggrek, surabaya.</p> -->
           <div class="lokasi-isi2">
             <div class="lokasi-isigambar">
-              <img src="img/gofood1.png" alt="" />
-              <img src="img/grab1.jpg" alt="" />
-              <img src="img/shopee.png" alt="" />
+              <img
+                src="img/gofood1.png"
+                alt=""
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              />
+              <img
+                src="img/grab1.jpg"
+                alt=""
+                data-aos="zoom-in"
+                data-aos-delay="550"
+              />
+              <img
+                src="img/shopee.png"
+                alt=""
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              />
             </div>
             <div class="lokasi-isiconten">
-              <p>
+              <p data-aos="zoom-in" data-aos-delay="500">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
-              <p>
+              <p data-aos="zoom-in" data-aos-delay="550">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
-              <p>
+              <p data-aos="zoom-in" data-aos-delay="600">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
@@ -80,11 +133,21 @@
       </svg>
       <div class="footer-isi">
         <div class="footer-link">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="100"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="100"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="150"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="200"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="250"
+            >belanja</a
+          >
         </div>
         <img src="img/logo.png" alt="" />
         <h2>cake & bakery</h2>
@@ -105,7 +168,10 @@
       </div>
     </section>
     <!-- footer end -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       feather.replace();
     </script>

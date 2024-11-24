@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="reset.css" />
@@ -15,14 +35,30 @@
     <!-- navbar start -->
     <header>
       <nav class="navbar">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <a href="#"
+          ><img
+            src="img/logo.png"
+            alt="logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="450"
+        /></a>
 
         <div class="navbarbox">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="500"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="550"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="600"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="650"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="700"
+            >belanja</a
+          >
         </div>
         <div class="navbar-extra">
           <a id="burgermenu"><i data-feather="menu"></i></a>
@@ -35,7 +71,11 @@
 
     <section class="regulermenu-img">
       <div class="regulermenu-judul">
-        <h1>keisya bakery menu</h1>
+        <h1>
+          <span data-aos="zoom-in" data-aos-delay="600">keisya </span>
+          <span data-aos="zoom-in" data-aos-delay="650">bakery</span>
+          <span data-aos="zoom-in" data-aos-delay="700"> menu</span>
+        </h1>
       </div>
     </section>
 
@@ -53,10 +93,10 @@
 
     <section class="menulist-box">
       <div class="menulist-pilihan">
-        <p class="allmenu">all menu</p>
-        <p class="brownies">brownies</p>
-        <p class="roti">roti</p>
-        <p class="bolu">bolu</p>
+        <p class="allmenu" data-aos="fade-up" data-aos-delay="300">all menu</p>
+        <p class="brownies" data-aos="fade-up" data-aos-delay="350">brownies</p>
+        <p class="roti" data-aos="fade-up" data-aos-delay="400">roti</p>
+        <p class="bolu" data-aos="fade-up" data-aos-delay="450">bolu</p>
       </div>
 
       <div class="menulist-isi">
@@ -145,7 +185,11 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-top: -2px"
+      >
         <path
           fill="#fff2e1"
           fill-opacity="1"
@@ -161,11 +205,21 @@
     <section class="footer-box">
       <div class="footer-isi">
         <div class="footer-link">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="100"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="150"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="200"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="250"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="300"
+            >belanja</a
+          >
         </div>
         <img src="img/logo.png" alt="" />
         <h2>cake & bakery</h2>
@@ -186,7 +240,10 @@
       </div>
     </section>
     <!-- footer end -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       feather.replace();
     </script>

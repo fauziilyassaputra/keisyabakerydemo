@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="lokasi.css" />
@@ -15,14 +35,30 @@
     <!-- navbar start -->
     <header>
       <nav class="navbar">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <a href="#"
+          ><img
+            src="img/logo.png"
+            alt="logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="450"
+        /></a>
 
         <div class="navbarbox">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="450"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="500"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="550"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="600"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="650"
+            >belanja</a
+          >
         </div>
         <div class="navbar-extra">
           <a id="burgermenu"><i data-feather="menu"></i></a>
@@ -34,8 +70,8 @@
     <!-- lokasi start -->
     <section class="lokasi-box2" id="lokasi">
       <div class="lokasi-judul">
-        <h1>lokasi kami</h1>
-        <p>surabaya jawa timur</p>
+        <h1 data-aos="zoom-in" data-aos-delay="500">lokasi kami</h1>
+        <p data-aos="zoom-in" data-aos-delay="600">surabaya jawa timur</p>
       </div>
       <div class="lokasi-isi">
         <div class="lokasi-gambar">
@@ -45,6 +81,8 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="map"
+            data-aos="zoom-in"
+            data-aos-delay="700"
           ></iframe>
         </div>
       </div>
@@ -62,11 +100,21 @@
       </svg>
       <div class="footer-isi">
         <div class="footer-link">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="100"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="150"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="200"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="250"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="300"
+            >belanja</a
+          >
         </div>
         <img src="img/logo.png" alt="" />
         <h2>cake & bakery</h2>
@@ -87,7 +135,10 @@
       </div>
     </section>
     <!-- footer end -->
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       feather.replace();
     </script>

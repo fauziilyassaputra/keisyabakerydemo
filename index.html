@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style1.css" />
     <link rel="stylesheet" href="reset.css" />
@@ -16,14 +35,30 @@
     <!-- navbar start -->
     <header>
       <nav class="navbar">
-        <a href="#"><img src="img/logo.png" alt="logo" /></a>
+        <a href="#"
+          ><img
+            src="img/logo.png"
+            alt="logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="450"
+        /></a>
 
         <div class="navbarbox">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="500"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-in-up" data-aos-delay="550"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-in-up" data-aos-delay="600"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-in-up" data-aos-delay="650"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-in-up" data-aos-delay="700"
+            >belanja</a
+          >
         </div>
 
         <div class="navbar-extra">
@@ -36,22 +71,34 @@
     <!-- hero section start -->
     <section class="hero">
       <div class="content">
-        <h1>keisya <span>bakery</span></h1>
-        <p>selalu ada menemani cemilan harian anda</p>
-        <a href="lokasi.html" class="cta">kunjungi sekarang</a>
+        <h1 data-aos="fade-up" data-aos-delay="300">
+          keisya <span data-aos="fade-up" data-aos-delay="350">bakery</span>
+        </h1>
+        <p data-aos="fade-up" data-aos-delay="400">
+          selalu ada menemani cemilan harian anda
+        </p>
+        <a
+          href="lokasi.html"
+          class="cta"
+          data-aos="fade-up"
+          data-aos-delay="450"
+          >kunjungi sekarang</a
+        >
       </div>
     </section>
     <!-- hero section end -->
 
     <!-- menu section start -->
     <section class="menu-box" id="menu">
-      <div class="menu-judul geseratas">
-        <h2>menu spesial</h2>
-        <p>bingung mau milih yang mana? coba saja menu andalan terbaik kami</p>
+      <div class="menu-judul">
+        <h2 data-aos="fade-up">menu spesial</h2>
+        <p data-aos="fade-up" data-aos-delay="50">
+          bingung mau milih yang mana? coba saja menu andalan terbaik kami
+        </p>
       </div>
 
       <div class="menu-boxg">
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="100">
           <img src="img/hero.jpg" alt="" class="menu-gambar" />
 
           <div class="menu-isi">
@@ -63,7 +110,7 @@
             <h2>harga: Rp.200.000</h2>
           </div>
         </div>
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="150">
           <img src="img/hero2.jpg" alt="" />
 
           <div class="menu-isi">
@@ -75,7 +122,7 @@
             <h2>harga: Rp.350.000</h2>
           </div>
         </div>
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="200">
           <img src="img/hero.jpg" alt="" />
 
           <div class="menu-isi">
@@ -87,7 +134,7 @@
             <h2>harga: Rp.350.000</h2>
           </div>
         </div>
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="250">
           <img src="img/hero3.jpg" alt="" />
 
           <div class="menu-isi">
@@ -99,7 +146,7 @@
             <h2>harga: Rp.100.000</h2>
           </div>
         </div>
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="300">
           <img src="img/hero.jpg" alt="" />
 
           <div class="menu-isi">
@@ -111,7 +158,7 @@
             <h2>harga: Rp.100.000</h2>
           </div>
         </div>
-        <div class="menu-list">
+        <div class="menu-list" data-aos="fade-up" data-aos-delay="350">
           <img src="img/hero.jpg" alt="" / class="packmenu-gambar">
 
           <div class="menu-isi">
@@ -124,10 +171,15 @@
           </div>
         </div>
       </div>
-      <div data-aos="zoom-out" data-aos-duration="1000">
-        <div class="menu-more">
-          <a href="menu.html" class="menu-button">more</a>
-        </div>
+
+      <div class="menu-more">
+        <a
+          href="menu.html"
+          class="menu-button"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+          >more</a
+        >
       </div>
     </section>
     <!-- menu section end -->
@@ -136,8 +188,8 @@
 
     <div class="packmenu-box">
       <div class="packmenu-judul">
-        <h2 class="geseratas">menu paketan spesial</h2>
-        <p class="geseratas">
+        <h2 data-aos="fade-up" data-aos-delay="0">menu paketan spesial</h2>
+        <p data-aos="fade-up" data-aos-delay="50">
           tersedia untuk anda dan keluarga serta teman-teman anda
         </p>
       </div>
@@ -146,75 +198,57 @@
         <div class="packmenu-boxlist">
           <div class="packmenu-boxisi" style="--i: 1">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet </span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 2">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet </span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 3">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet .</span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 4">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet</span></h2>
           </div>
         </div>
         <div class="packmenu-boxlist2">
           <div class="packmenu-boxisi" style="--i: 1">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet</span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 2">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet</span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 3">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet </span></h2>
           </div>
           <div class="packmenu-boxisi" style="--i: 4">
             <div class="imgbx"><img src="img/download2.jpg" alt="" /></div>
-            <h2>
-              moon cake <br /><span
-                >Lorem ipsum dolor sit amet consectetur adipisicing.</span
-              >
-            </h2>
+            <h2>moon cake <br /><span>Lorem ipsum dolor sit amet </span></h2>
           </div>
         </div>
 
         <div class="packmenu-button">
-          <button class="prev" id="prev">&lt;</button>
-          <button class="next" id="next">&gt;</button>
+          <button
+            class="prev"
+            id="prev"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            &lt;
+          </button>
+          <button
+            class="next"
+            id="next"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            &gt;
+          </button>
         </div>
       </div>
     </div>
@@ -224,11 +258,11 @@
     <!-- about section start -->
 
     <section class="about-box">
-      <div class="about-judul geseratas">
-        <h1>tentang kami</h1>
+      <div class="about-judul">
+        <h1 data-aos="fade-up" data-aos-delay="100">tentang kami</h1>
       </div>
       <div class="about-isi">
-        <p class="geseratas">
+        <p class="" data-aos="zoom-in" data-aos-delay="100">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis,
           facilis exercitationem distinctio beatae, enim voluptatum suscipit
           quia ipsam similique sed molestias . Minus delectus, voluptas facere
@@ -236,10 +270,15 @@
           sequi pariatur, inventore dolores.
         </p>
 
-        <div data-aos="zoom-out" data-aos-duration="1000">
-          <img src="img/owner.jpg" alt="" />
-        </div>
-        <p class="geseratas">
+        <img
+          src="img/owner.jpg"
+          alt=""
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        />
+
+        <p class="" data-aos="zoom-in" data-aos-delay="200">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolorum
           ullam adipisci exercitationem quia facere amet repudiandae provident
           minus officia earum, tenetur qui quod necessitatibus natus vel ut,
@@ -247,7 +286,11 @@
           <a href="tentangkami.html">read more...</a>
         </p>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -2px"
+      >
         <path
           fill="#fff2e1"
           fill-opacity="1"
@@ -261,7 +304,7 @@
     <!-- lokasi section start -->
     <section class="lokasi-box" id="lokasi">
       <div class="lokasi-judul geseratas">
-        <h1>lokasi kami</h1>
+        <h1 data-aos="fade-up" data-aos-delay="100">lokasi kami</h1>
       </div>
       <div class="lokasi-isi">
         <div class="lokasi-gambar">
@@ -271,34 +314,52 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             class="map"
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
+            data-aos-duration="500"
           ></iframe>
         </div>
 
         <div class="lokasi-belanja geseratas">
-          <h1 class="">kunjungi kami</h1>
-          <p class="">lorong melati, desa mawar, kec.anggrek, surabaya.</p>
+          <h1 class="" data-aos="zoom-in-up" data-aos-delay="100">
+            kunjungi kami
+          </h1>
+          <p class="" data-aos="zoom-in-up" data-aos-delay="150">
+            lorong melati, desa mawar, kec.anggrek, surabaya.
+          </p>
           <div class="lokasi-isi2">
             <div class="lokasi-isigambar">
-              <div data-aos="zoom-out" data-aos-duration="1500">
-                <img src="img/gofood1.png" alt="" />
-              </div>
-              <div data-aos="zoom-out" data-aos-duration="1500">
-                <img src="img/grab1.jpg" alt="" />
-              </div>
-              <div data-aos="zoom-out" data-aos-duration="1500">
-                <img src="img/shopee.png" alt="" />
-              </div>
+              <img
+                src="img/gofood1.png"
+                alt=""
+                data-aos="zoom-out"
+                data-aos-delay="250"
+              />
+
+              <img
+                src="img/grab1.jpg"
+                alt=""
+                data-aos="zoom-out"
+                data-aos-delay="300"
+              />
+
+              <img
+                src="img/shopee.png"
+                alt=""
+                data-aos="zoom-out"
+                data-aos-delay="350"
+              />
             </div>
             <div class="lokasi-isiconten">
-              <p>
+              <p data-aos="zoom-out" data-aos-delay="250">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
-              <p>
+              <p data-aos="zoom-out" data-aos-delay="300">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
-              <p>
+              <p data-aos="zoom-out" data-aos-delay="350">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatum praesentium
               </p>
@@ -306,7 +367,11 @@
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="margin-bottom: -2px"
+      >
         <path
           fill="#a79277"
           fill-opacity="1"
@@ -321,11 +386,21 @@
     <section class="footer-box">
       <div class="footer-isi">
         <div class="footer-link">
-          <a href="index.html">beranda</a>
-          <a href="menu.html">menu</a>
-          <a href="tentangkami.html">tentang</a>
-          <a href="lokasi.html">lokasi</a>
-          <a href="belanja.html">belanja</a>
+          <a href="index.html" data-aos="zoom-in-up" data-aos-delay="100"
+            >beranda</a
+          >
+          <a href="menu.html" data-aos="zoom-out-up" data-aos-delay="150"
+            >menu</a
+          >
+          <a href="tentangkami.html" data-aos="zoom-out-up" data-aos-delay="200"
+            >tentang</a
+          >
+          <a href="lokasi.html" data-aos="zoom-out-up" data-aos-delay="250"
+            >lokasi</a
+          >
+          <a href="belanja.html" data-aos="zoom-out-up" data-aos-delay="300"
+            >belanja</a
+          >
         </div>
         <img src="img/logo.png" alt="" />
         <h2>cake & bakery</h2>
